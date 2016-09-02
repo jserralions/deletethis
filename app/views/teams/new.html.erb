@@ -1,9 +1,3 @@
 <h1>Creating an article!</h1>
-<%= form_for @teams do |f| %>
-<p>Team Name: <%= f.text_field :name %><br></p>
-<p>Team Rank: <%= f.text_field :rank %><br></p>
-<p>Team Strength: <%= f.text_area :strength %><br></p>
-<p>Team Weakness: <%= f.text_area :weakness %></p>
-<p><%= f.submit %></p>
 
-<% end %>
+<%= render 'partials/form' %>

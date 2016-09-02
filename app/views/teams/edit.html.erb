@@ -1,10 +1,3 @@
-<h2>Currently in our database!</h2>
-  <%= form_for @teams do |f| %>
-  <p>Team: <%= f.text_field :name  %><br></p>
-  <p>Rank: <%= f.text_field :rank %><br></p>
-  <p>Weakness: <%= f.text_area :strength %><br></p>
-  <p>Strength: <%= f.text_area :weakness %><br></p>
+<h1>Editing our article.</h1>
 
-  <p>Submit: <%= f.submit %></p>
-
-<% end %>
+<%= render 'partials/form' %>
