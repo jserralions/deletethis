@@ -6,14 +6,14 @@
     <th>Strength</th>
   </tr>
   <tr>
-    <% @all_teams.each do |team| %>
+    <% @teams.each do |team| %>
     <td><%= team.name  %></td>
     <td><%= team.rank %></td>
     <td><%= team.strength %></td>
     <td><%= link_to 'View this team', team_path(team)  %></td>
     <td><%= link_to 'Edit this team', edit_team_path(team)  %></td>
-    <td><%= link_to 'Delete this team', team_path(team), method: :delete, data: {confirm: "You sure?"}  %></td>
-  <tr>
+    <td><%= link_to 'Delete this team', edit_team_path(team), method: :delete  %></td>
+    <tr>
     <% end %>
     <%= link_to 'Create an article', new_team_path %>
 </table>
